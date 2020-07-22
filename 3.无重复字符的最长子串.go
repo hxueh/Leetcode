@@ -29,4 +29,8 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return ans
 }
+
+// Time complexity O(N)
+// Space complexity O(Character encoding)
+
 // @lc code=end

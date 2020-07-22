@@ -37,4 +37,8 @@ func minPathSum(grid [][]int) int {
 	}
 	return dp[len(dp) - 1][len(dp[0]) - 1]
 }
+
+// Time complexity O(M*N)
+// Space complexity O(M*N)
+
 // @lc code=end

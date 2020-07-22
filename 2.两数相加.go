@@ -33,4 +33,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 	return dummyHead.Next
 }
+
+// Time complexity O(N)
+// Space complexity O(1)
+
 // @lc code=end

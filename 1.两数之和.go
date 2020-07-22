@@ -17,4 +17,8 @@ func twoSum(nums []int, target int) []int {
 	}
 	return []int{}
 }
+
+// Time complexity O(N)
+// Space complexity O(N)
+
 // @lc code=end

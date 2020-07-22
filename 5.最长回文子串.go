@@ -42,4 +42,7 @@ func helper(s string, leftIdx int, rightIdx int) (length int) {
 	return rightIdx - leftIdx - 1
 }
 
+// Time complexity O(N2)
+// Space complexity O(1)
+
 // @lc code=end

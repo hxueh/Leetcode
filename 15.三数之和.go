@@ -41,4 +41,7 @@ func threeSum(nums []int) [][]int {
 	return res
 }
 
+// Time complexity O(N2)
+// Space complexity O(N)
+
 // @lc code=end

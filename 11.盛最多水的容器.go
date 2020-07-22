@@ -34,4 +34,8 @@ func maxArea(height []int) int {
 	}
 	return res
 }
+
+// Time complexity O(N)
+// Space complexity O(1)
+
 // @lc code=end

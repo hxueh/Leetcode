@@ -34,4 +34,8 @@ func letterCombinations(digits string) []string {
 	}
 	return resArray
 }
+
+// Time complexity O(M*N)
+// Space complexity O(N)
+
 // @lc code=end

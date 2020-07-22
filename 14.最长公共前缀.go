@@ -22,4 +22,8 @@ func longestCommonPrefix(strs []string) string {
 	}
 	return strs[0]
 }
+
+// Time complexity O(M*N)
+// Space complexity O(1)
+
 // @lc code=end
