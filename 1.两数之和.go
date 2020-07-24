@@ -5,6 +5,9 @@
  */
 
 // @lc code=start
+
+package leetcode
+
 func twoSum(nums []int, target int) []int {
 	numMap := make(map[int]int)
 	for idx, num := range nums {
