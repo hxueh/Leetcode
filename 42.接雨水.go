@@ -5,9 +5,6 @@
  */
 
 // @lc code=start
-
-package leetcode
-
 func min(a int, b int) int {
 	if a < b {
 		return a
