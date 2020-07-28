@@ -30,4 +30,8 @@ func permute(nums []int) [][]int {
 	helper(nums, curRes, &res)
 	return res
 }
+
+// Time complexity O(Nn)
+// Space complexity O(Nn)
+
 // @lc code=end

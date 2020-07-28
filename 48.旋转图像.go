@@ -39,4 +39,7 @@ func rotate270(matrix [][]int) {
 	}
 }
 
+// Time complexity O(N)
+// Space complexity O(1)
+
 // @lc code=end

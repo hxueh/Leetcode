@@ -18,4 +18,8 @@ func myPow(x float64, n int) float64 {
 	half := myPow(x, n / 2)
 	return half * half * myPow(x, n % 2)
 }
+
+// Time complexity O(logN)
+// Space complexity O(logN)
+
 // @lc code=end
