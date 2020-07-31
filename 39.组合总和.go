@@ -5,24 +5,17 @@
  */
 
 // @lc code=start
-
-import (
-	"reflect"
-	"sort"
-)
+import "sort"
 
 func helper(candidates []int, target int, res *[][]int, curRes []int) {
 	if target == 0 {
-		for _, i := range *res {
-			if reflect.DeepEqual(i, curRes) {
-				return
-			}
-		}
 		*res = append(*res, curRes)
 	} else if target > 0 {
-		for idx, i := range candidates {
-			newCurRes := append(curRes, i)
-			helper(candidates[idx:], target-i, res, newCurRes)
+		for idx, num := range candidates {
+			newCurRes := make([]int, len(curRes)+1)
+			copy(newCurRes, curRes)
+			newCurRes[len(newCurRes)-1] = num
+			helper(candidates[idx:], target-num, res, newCurRes)
 		}
 	}
 }
