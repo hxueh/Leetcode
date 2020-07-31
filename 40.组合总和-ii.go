@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-package leetcode
-
 import "sort"
 
 func helper(candidates []int, start int, target int, res *[][]int, curRes []int) {
