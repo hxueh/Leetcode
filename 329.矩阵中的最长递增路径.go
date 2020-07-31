@@ -59,4 +59,7 @@ func longestIncreasingPath(matrix [][]int) int {
 	return ans
 }
 
+// Time complexity O(N)
+// Space complexity O(N)
+
 // @lc code=end

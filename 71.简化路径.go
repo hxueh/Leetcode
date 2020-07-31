@@ -40,4 +40,7 @@ func simplifyPath(path string) string {
 	return "/" + strings.Join(paths, "/")
 }
 
+// Time complexity O(N)
+// Space complexity O(N)
+
 // @lc code=end

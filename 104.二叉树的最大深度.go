@@ -31,4 +31,8 @@ func helper(root *TreeNode, depth int) int {
 func maxDepth(root *TreeNode) int {
 	return helper(root, 0)
 }
+
+// Time complexity O(N)
+// Space complexity O(logN)
+
 // @lc code=end

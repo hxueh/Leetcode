@@ -35,4 +35,7 @@ func nthUglyNumber(n int) int {
 	return uglys[n-1]
 }
 
+// Time complexity O(N)
+// Space complexity O(N)
+
 // @lc code=end

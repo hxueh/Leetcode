@@ -23,4 +23,7 @@ func integerBreak(n int) int {
 	return dp[n]
 }
 
+// Time complexity O(N2)
+// Space complexity O(N)
+
 // @lc code=end
