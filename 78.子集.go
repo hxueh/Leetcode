@@ -16,7 +16,6 @@ func subsets(nums []int) [][]int {
 			curRes[len(curRes)-1] = num
 			res = append(res, curRes)
 		}
-		fmt.Println(num, res)
 	}
 	return res
 }
