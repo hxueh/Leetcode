@@ -7,9 +7,12 @@
 // @lc code=start
 /**
  * Definition for a binary tree node.
- **/
-package leetcode
-
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
