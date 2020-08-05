@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-package leetcode
-
 func numTrees(n int) int {
 	if n == 0 || n == 1 {
 		return 1

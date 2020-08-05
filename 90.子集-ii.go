@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-package leetcode
-
 import "sort"
 
 func subsetsWithDup(nums []int) [][]int {
