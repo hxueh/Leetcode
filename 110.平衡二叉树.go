@@ -27,25 +27,20 @@ func abs(a int) int {
 	return a
 }
 
-func helper(root *TreeNode) (bool, int) {
+func helper(root *TreeNode) int {
 	if root == nil {
-		return true, -1
-	} else {
-		leftIsBalanced, leftHeight := helper(root.Left)
-		if !leftIsBalanced {
-			return false, 0
-		}
-		rightIsBalanced, rightHeight := helper(root.Right)
-		if !rightIsBalanced {
-			return false, 0
-		}
-		return abs(leftHeight-rightHeight) <= 1, 1 + max(leftHeight, rightHeight)
+		return 0
 	}
+	left := helper(root.Left)
+	right := helper(root.Right)
+	if left == -1 || right == -1 || abs(left-right) > 1 {
+		return -1
+	}
+	return max(left, right) + 1
 }
 
 func isBalanced(root *TreeNode) bool {
-	res, _ := helper(root)
-	return res
+	return helper(root) != -1
 }
 
 // @lc code=end
