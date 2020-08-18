@@ -24,17 +24,15 @@ func sortedListToBST(head *ListNode) *TreeNode {
 	if head == nil {
 		return nil
 	}
+	if head.Next == nil {
+		return &TreeNode{Val: head.Val}
+	}
 	var beforeSlow *ListNode
 	slow, fast := head, head
 	for fast != nil && fast.Next != nil {
 		beforeSlow, slow, fast = slow, slow.Next, fast.Next.Next
 	}
-	if slow == head {
-		return &TreeNode{Val: slow.Val, Right: sortedListToBST(slow.Next)}
-	}
-	if beforeSlow != nil {
-		beforeSlow.Next = nil
-	}
+	beforeSlow.Next = nil
 	return &TreeNode{Val: slow.Val, Left: sortedListToBST(head), Right: sortedListToBST(slow.Next)}
 }
 
